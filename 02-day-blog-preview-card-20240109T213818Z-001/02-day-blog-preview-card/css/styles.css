@@ -1,0 +1,101 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 11
+2. Variables ...................... 15
+3. Estilos generales .............. 33
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+
+/* ----- Variables ----- */
+* {
+	/* --- colores primarios --- */
+	--yellow-color: hsl(47, 88%, 63%);
+
+	/* --- colores neutrales --- */
+	--white-color: hsl(0, 0%, 100%);
+	--grey-color: hsl(0, 0%, 50%);
+	--black-color: hsl(0, 0%, 7%);
+
+	--primary-font-family: 'Figtree', sans-serif;
+	--lh-text: 16px;
+	--font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--yellow-color);
+	color: var(--black-color);
+	font-size: var(--font-size);
+	line-height: var(--lh-text);
+	font-size: var(--font-size);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 350px;
+	border: 1px solid #000;
+	border-radius: 15px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+	margin-inline: 15px;
+	box-shadow: 8px 8px 0 0 #000;
+}
+
+
+
+.container > img {
+	border-radius: 15px;
+	object-fit: cover;
+	background-size: 100% 100%;
+}
+
+.profile p{
+	padding-block: 20px;
+}
+
+.profile button {
+	background-color: var(--yellow-color);
+	border: none;
+	padding: .5rem;
+	border-radius: 5px;
+	margin-block: 15px;
+	font-weight: bold;
+}
+
+.text {
+	color: var(--grey-color);
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+/* ------------------------
+Diseño: Frontend Mentor🎨
+Desarrollo: Frontend Club🔥
+--------------------------- */
